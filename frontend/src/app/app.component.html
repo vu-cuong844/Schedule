@@ -1,0 +1,29 @@
+<router-outlet>
+
+  <main class="main text-danger"> <!-- text-danger là màu đỏ mặc định của Bootstrap -->
+    <!-- Header -->
+    <div class="container-fluid px-3">
+      <app-header></app-header>
+    </div>
+
+    <!-- Nội dung chính chia làm 2 cột -->
+    <div class="container-fluid">
+      <div class="row">
+        <!-- Menu bên trái -->
+        <div class="col-12 col-md-2 mb-3">
+          <app-menu></app-menu>
+        </div>
+
+        <!-- Main content -->
+        <div class="col-12 col-md-10">
+          <app-main-content></app-main-content>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="container-fluid px-3 mt-4">
+      <app-footer></app-footer>
+    </div>
+  </main>
+</router-outlet>

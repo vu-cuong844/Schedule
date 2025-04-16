@@ -1,0 +1,18 @@
+<div style="max-height: 500px; overflow: auto;">
+  <div class="table-responsive">
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th *ngFor="let key of keys">{{ key }}</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let row of jsonData; let i = index">
+          <td>{{ i + 1 }}</td>
+          <td *ngFor="let key of keys">{{ row[key] }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
