@@ -1,0 +1,6 @@
+.scrollable-body {
+    display: block;
+    max-height: 600px;  /* Điều chỉnh chiều cao vùng cuộn */
+    overflow-y: auto;   /* Cho phép cuộn dọc */
+  }
+  

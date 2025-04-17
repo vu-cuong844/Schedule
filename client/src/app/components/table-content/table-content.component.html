@@ -1,0 +1,17 @@
+<div class="container-fluid">
+    <div class="table-responsive" style="max-height: 500px; overflow-y: auto;">
+      <table class="table table-bordered table-hover">
+        <thead *ngIf="tableData.length > 0">
+          <tr>
+            <th *ngFor="let header of tableData[0]">{{ header }}</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let row of tableData.slice(1)">
+            <td *ngFor="let cell of row">{{ cell }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  
