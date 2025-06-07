@@ -121,7 +121,7 @@ Login với vai trò TEACHER:
 
 ---
 
-### 🖥️ Frontend (nếu có)
+### 🖥️ Frontend 
 
 - ReactJS (hoặc Vue / Angular tùy dự án)
 - [`axios`](https://www.npmjs.com/package/axios) – Gửi request HTTP
@@ -139,7 +139,7 @@ Login với vai trò TEACHER:
 
 ---
 
-> 📌 **Lưu ý:** File `.env.example` đã có sẵn trong repo. Bạn cần copy thành `.env` và chỉnh sửa thông tin kết nối DB trước khi chạy ứng dụng.
+> 📌 **Lưu ý:** File `.env.example` đã có sẵn trong repo, cần copy thành `.env` và chỉnh sửa thông tin kết nối DB trước khi chạy ứng dụng.
 
 
 
