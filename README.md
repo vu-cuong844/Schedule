@@ -57,8 +57,9 @@ Cấu hình username và password cho database:
     MYSQL_DATABASE=your_database_name
 
 
-## Cấu dự án
+## 📁 Cấu trúc dự án
 
+```bash
 Schedule/
 ├── auth/            # Service xác thực & phân quyền
 ├── gateway/         # API Gateway
@@ -67,6 +68,8 @@ Schedule/
 ├── my-app/          # Frontend (React)
 ├── mysql/init/      # File SQL khởi tạo CSDL
 └── .env.example     # Mẫu file môi trường
+```
+
 
 ## Hướng dẫn sử dụng
 
