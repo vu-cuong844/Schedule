@@ -61,7 +61,7 @@ Cấu hình username và password cho database:
 
 ```bash
 Schedule/
-├── auth/            # Service xác thực & phân quyền
+├── authentication/            # Service xác thực & phân quyền
 ├── gateway/         # API Gateway
 ├── eureka/          # Service Registry
 ├── timetabling/     # Service xử lý lập lịch
