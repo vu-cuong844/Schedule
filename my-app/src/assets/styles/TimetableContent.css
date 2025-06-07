@@ -1,0 +1,226 @@
+/* Container cho nội dung thời khóa biểu */
+.timetable-content {
+  padding: 20px;
+  max-width: 1400px; /* Bảng rộng */
+  margin: 0 20px 0 auto; /* Lề phải để tránh mép màn hình */
+  font-family: 'Arial', sans-serif;
+}
+
+/* Kiểu chữ tiêu đề */
+.timetable-content h3 {
+  font-size: 24px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Nhóm các input tải file */
+.file-upload-group {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin: 20px auto;
+  max-width: 1000px; /* Chứa các input ngang hàng */
+}
+
+/* Container cho từng cặp label và input */
+.file-upload {
+  display: flex;
+  flex-direction: row; /* Label và input nằm ngang hàng */
+  align-items: center;
+  gap: 10px; /* Khoảng cách giữa label và input */
+  width: 300px; /* Chứa cả label và input */
+}
+
+/* Kiểu chữ cho label */
+.file-upload label {
+  font-size: 16px;
+  font-weight: 500;
+  color: #333;
+  white-space: nowrap; /* Ngăn label xuống dòng */
+}
+
+/* Kiểu cho input file */
+.input-file {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #fff;
+  cursor: pointer;
+  flex: 1; /* Input chiếm hết không gian còn lại */
+  text-align: center;
+}
+
+.input-file:hover {
+  border-color: #4a90e2;
+}
+
+.input-file:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(74, 144, 226, 0.3);
+}
+
+/* Nhóm các nút */
+.button-group {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px; /* Khoảng cách giữa các nút */
+  margin: 20px auto;
+  max-width: 400px; /* Giới hạn chiều rộng nhóm nút */
+}
+
+/* Kiểu nút tải xuống */
+.download-button {
+  padding: 10px 20px;
+  background-color: #28a745; /* Nút màu xanh */
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.download-button:hover {
+  background-color: #218838; /* Màu xanh đậm khi hover */
+}
+
+.download-button:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(40, 167, 69, 0.3);
+}
+
+/* Kiểu nút lập lịch */
+.schedule-button {
+  padding: 10px 20px;
+  background-color: #007bff; /* Nút màu xanh dương để phân biệt */
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.schedule-button:hover {
+  background-color: #0056b3; /* Màu xanh dương đậm khi hover */
+}
+
+.schedule-button:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.3);
+}
+
+/* Wrapper cho bảng có thể cuộn */
+.table-wrapper {
+  overflow-x: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+
+/* Kiểu bảng */
+.content-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px; /* Font nhỏ hơn do có nhiều cột */
+  color: #333;
+  min-width: 1600px; /* Đảm bảo bảng đủ rộng cho tất cả cột */
+}
+
+/* Kiểu tiêu đề bảng */
+.content-table thead tr {
+  background-color: #dc3545; /* Tiêu đề đỏ */
+  color: #fff;
+  text-align: left;
+}
+
+.content-table th {
+  padding: 12px 10px; /* Giảm padding cho nhiều cột */
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 12px; /* Font nhỏ hơn cho tiêu đề */
+}
+
+/* Kiểu thân bảng */
+.content-table tbody tr {
+  border-bottom: 1px solid #e0e0e0;
+  transition: background-color 0.2s ease;
+}
+
+.content-table tbody tr:hover {
+  background-color: #f5f5f5; /* Hiệu ứng hover màu xám nhạt */
+}
+
+.content-table td {
+  padding: 12px 10px; /* Giảm padding cho nhiều cột */
+  vertical-align: middle;
+}
+
+/* Màu xen kẽ cho hàng để dễ đọc */
+.content-table tbody tr:nth-child(even) {
+  background-color: #fafafa;
+}
+
+/* Điều chỉnh responsive */
+@media (max-width: 768px) {
+  .content-table {
+    font-size: 12px;
+  }
+
+  .content-table th,
+  .content-table td {
+    padding: 8px 6px; /* Giảm padding hơn nữa cho màn hình nhỏ */
+  }
+
+  .timetable-content h3 {
+    font-size: 20px;
+  }
+
+  .file-upload-group {
+    flex-direction: column; /* Chuyển sang dọc trên màn hình nhỏ */
+    align-items: center;
+    gap: 15px;
+  }
+
+  .file-upload {
+    width: 100%;
+    max-width: 300px; /* Giới hạn width trên màn hình nhỏ */
+    flex-direction: column; /* Trở lại dọc để dễ đọc */
+    align-items: center;
+    gap: 8px;
+  }
+
+  .input-file {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  .file-upload label {
+    font-size: 14px;
+  }
+
+  .button-group {
+    flex-direction: column; /* Nút xếp dọc trên màn hình nhỏ */
+    align-items: center;
+    gap: 10px;
+  }
+
+  .download-button,
+  .schedule-button {
+    font-size: 14px;
+    padding: 8px 16px;
+    width: 100%;
+    max-width: 200px; /* Giới hạn chiều rộng nút */
+  }
+
+  .timetable-content {
+    margin: 0 10px; /* Giảm lề phải cho màn hình nhỏ */
+  }
+}

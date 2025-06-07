@@ -1,0 +1,109 @@
+.teacher-page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.teacher-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background: #e63946;
+  color: white;
+}
+
+.header-logo {
+  width: 150px;
+}
+
+.logout-button {
+  padding: 11px 21px;
+  background: #c1121f;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  width: auto;
+}
+
+.logout-button:hover {
+  background: #a00f1a;
+}
+
+.teacher-container {
+  display: flex;
+  flex: 1;
+}
+
+.teacher-menu {
+  width: 200px;
+  background: #f8f9fa;
+  padding: 20px;
+  border-right: 1px solid #ddd;
+}
+
+.teacher-menu ul {
+  list-style: none;
+  padding: 0;
+}
+
+.teacher-menu li {
+  margin-bottom: 10px;
+}
+
+.teacher-menu a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: #333;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+.teacher-menu a:hover {
+  background: #e63946;
+  color: white;
+}
+
+.teacher-menu a.active {
+  background: #e63946;
+  color: white;
+  font-weight: bold;
+}
+
+.teacher-content {
+  flex: 1;
+  padding: 20px;
+}
+
+.teacher-footer {
+  text-align: center;
+  padding: 10px;
+  background: #e63946;
+  color: white;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .teacher-container {
+    flex-direction: column;
+  }
+
+  .teacher-menu {
+    width: 100%;
+    border-right: none;
+    border-bottom: 1px solid #ddd;
+  }
+
+  .teacher-menu ul {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .teacher-menu li {
+    margin-right: 10px;
+    margin-bottom: 5px;
+  }
+}

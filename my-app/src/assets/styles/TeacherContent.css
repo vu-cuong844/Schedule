@@ -1,0 +1,115 @@
+/* Container for the teacher content */
+.teacher-content {
+  padding: 20px;
+  max-width: 1400px; /* Maintain wider table */
+  margin: 0 20px 0 auto; /* Add 20px right margin, auto left for centering */
+  font-family: 'Arial', sans-serif;
+}
+
+/* Heading style */
+.teacher-content h3 {
+  font-size: 24px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Table container for scrollable table on smaller screens */
+.content-table-container {
+  overflow-x: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+
+/* Table styles */
+.content-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 16px;
+  color: #333;
+}
+
+/* Table header styles */
+.content-table thead tr {
+  background-color: #dc3545; /* Red header background */
+  color: #fff;
+  text-align: left;
+}
+
+.content-table th {
+  padding: 12px 15px;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+/* Table body styles */
+.content-table tbody tr {
+  border-bottom: 1px solid #e0e0e0;
+  transition: background-color 0.2s ease;
+}
+
+.content-table tbody tr:hover {
+  background-color: #f5f5f5; /* Light gray hover effect */
+}
+
+.content-table td {
+  padding: 12px 15px;
+  vertical-align: middle;
+}
+
+/* Alternating row colors for better readability */
+.content-table tbody tr:nth-child(even) {
+  background-color: #fafafa;
+}
+
+/* Add button styles */
+.add-button {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  background-color: #e71818; /* Green button */
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.add-button:hover {
+  background-color: #720707; /* Darker green on hover */
+}
+
+.add-button:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(224, 22, 22, 0.163);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .content-table {
+    font-size: 14px;
+  }
+
+  .content-table th,
+  .content-table td {
+    padding: 10px;
+  }
+
+  .teacher-content h3 {
+    font-size: 20px;
+  }
+
+  .add-button {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+
+  .teacher-content {
+    margin: 0 10px; /* Reduce right margin for smaller screens */
+  }
+}
