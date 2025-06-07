@@ -52,9 +52,11 @@ Khởi tạo database:
 Cấu hình username và password cho database:
 - vào file .env.example
 - Sủa lại 3 trường: 
+```bash
     MYSQL_ROOT_USERNAME=your_mysql_username
     MYSQL_ROOT_PASSWORD=your_mysql_password
     MYSQL_DATABASE=your_database_name
+```
 
 
 ## 📁 Cấu trúc dự án
@@ -96,12 +98,16 @@ npm start
 Kiểm tra: http://localhost:3000.
 
 Login với vai trò PDT:
+```bash
 - username: banhabang@example.com
 - password: SamplePass123
+```
 
 Login với vai trò TEACHER:
+```bash
 - username: anhbuithimai@example.com
 - password: SamplePass123
+```
 
 
 ## 🧰 Công nghệ sử dụng
